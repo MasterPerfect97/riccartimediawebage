@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+  <title>Flexbox Pricing Table</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url(pt.jpg); border:50px;
+    }
+
+    img{
+      
+      height: 4rem;
+      gap: 50px;
+      clear: left;
+    }
+
+    .pro{
+      display: flex;
+      gap:450px;
+      background-color: blue;
+      flex-shrink:400px;
+    }
+    .sub{
+      display: flex;
+      background-color: darkturquoise;
+      font-weight: 200;
+      flex-basis: 100px;
+      gap: 90px;
+      align-items: center;
+      flex-direction: row;
+      justify-content: left;
+    }
+
+    .cont4{display: flex;
+      border: 30px;
+      padding: 40px;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      color: white;
+    }
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+
+    .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .plan-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-price {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .headmaster{
+      font-weight: 600;
+    }
+    .son{
+      text-align: center;
+    }
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-features li {
+      margin-bottom: 20px;
+    }
+
+    .dough{
+    text-align: center;
+    }
+    .plan-button {
+      padding: 10px;
+      background-color: #ff6600;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+
+    @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
+
+    }
+    .terms{
+      color: white;
+      text-transform: uppercase;
+      text-shadow: #f2f2f2;
+      text-wrap: 30px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    footer{font-size: 14px; text-align: center;}
+    a:active{color:#ffff00;}
+    a:active{colour:white;}
+  </style>
+</head>
+
+<body>
+    <div class="container">
+
+       <div class="pro"> <div class><img src="triper.jpg" alt="triperTech Logo"/></div>
+        <div><h class="headmaster">TRIPERTECHIFY INCORPORATION</h>
+          <p class="son"><em>Est. 1991</em></p></div></div>
+          <div class="sub">
+            <div><a href="home.html" target="_blank">HOME</a></div>
+            <div><a href="aboutus.html" target="_blank">ABOUT US</a></div>
+            <div><a href="contactus.html" target="_blank">CONTACT US</a></div>
+            <div><a href="ourmedia.html" target="_blank">OUR MEDIAS</a></div>
+          </div>
+
+          <div class="cont4">
+            <h><b>LIST OF AVAILABLE PLANS</b></h>
+          </div>
+
+    </div>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$5.00/month</div>
+      <ul class="plan-features">
+        <li>One Users</li>
+        <li>Unlimited access to videos and musics</li>
+        <li>3GB daily data usage</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Intermediate</div>
+      <div class="plan-price">$12.00/month</div>
+      <ul class="plan-features">
+        <li>Three Users</li>
+        <li>Unlimited access t musics and videos download</li>
+        <li>25GB daily data usage</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$18.00/month</div>
+      <ul class="plan-features">
+        <li>7 Users</li>
+        <li>Unlimited access to music and videos download</li>
+        <li>35GB daily data usage</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">SuperNova</div>
+      <div class="plan-price">$50.00/month</div>
+      <ul class="plan-features">
+        <li>20 Users</li>
+        <li>Unlimited access to musics and videos download</li>
+        <li>Unlimited daily data usage</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+  <p class="terms">By clicking <input type="radio" id="yes" name="yes" required/>YES, you agree to our peronal terms and conditions</p>
+
+  <div class="dough">
+    <footer><em><a href="https://www.perfecttech.com" target="_blank">Perfect Tech</a></em></footer>
+  </div>
+</body>
+
+</html>
